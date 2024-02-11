@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main-style.css">
+    <title>Contents</title>
+</head>
+<body class="SecondBody">
+    <header>
+        <img height="50" width="50" src="images/logo.png" alt="logo">
+        <p>Имя студента: Екимов Георгий</p>
+        <p>Номер группы: 1103o</p>
+        <p>Преподователь: Цветкова Людмила</p>
+    </header>
+    <a href="index.html"><button>На главную</button></a>
+    <h1 class="option">Github</h1>
+    <h2 class="definition">Github:</h2>
+    <p>GitHub - это платформа <span class="bold">хостинга</span>, <span class="bold">хранения</span> и <span class="bold">совместной разработке</span>. Здесь <span class="bold">любые</span> или <span class="bold">выбранные</span> разработчики могут работать над своими проектами, передавать другим или работать совместно.</p>
+    <h2 class="definition">SSH-ключ:</h2>
+    <p>это способ безопасного подключения на <span class="bold">удаленном</span> сервере GitHub без постоянного ввода пароля.</p>
+    <h2 class="definition">Репозиторий:</h2>
+    <p>Репозиторий - это место <span class="bold">хранения</span> кода проекта с историей изменений.</p>
+    <h2 class="definition">Коммит:</h2>
+    <p> Коммит - это сохранение <span class="bold">изменений</span> в коде проекта.</p>
+    <h2 class="definition">Ветка:</h2>
+    Ветка - это отдельная <span class="bold">линия</span> разработки, которая может быть создана для работы над другим кодом, не затрагивая <span class="bold">основной</span> код проекта.
+    <div class="terminal">
+        <pre>
+          <code>
+            <span class="command">git clone https://github.com/example/repository.git</span>
+            <span class="comment">// Клонирование репозитория.</span>
+          </code>
+        </pre>
+    </div>
+    <div class="terminal">
+        <pre>
+          <code>
+            <span class="command">git init</span>
+            <span class="comment">// создать локальный репозиторий.</span>
+          </code>
+        </pre>
+    </div>
+    <div class="terminal">
+        <pre>
+          <code>
+            <span class="command">git add [название файла]</span>
+            <span class="comment">// проиндексировать/выделить файл или папку.</span>
+          </code>
+        </pre>
+    </div>
+    <div class="terminal">
+        <pre>
+          <code>
+            <span class="command">git commit -m "любой текст"</span>
+            <span class="comment">// добавление обязательного комментария при пуше/загрузке/удалении файла/ветки.</span>
+          </code>
+        </pre>
+    </div>
+    <div class="terminal">
+        <pre>
+          <code>
+            <span class="command">git branch [название ветки]</span>
+            <span class="comment">// создание ветки.</span>
+          </code>
+        </pre>
+    </div>
+    <div class="terminal">
+        <pre>
+          <code>
+            <span class="command">git checkout [название ветки] </span>
+            <span class="comment">// войти в ветку.</span>
+          </code>
+        </pre>
+    </div>
+    <div class="terminal">
+        <pre>
+          <code>
+            <span class="command">git remote add origin [ssh-ключ] </span>
+            <span class="comment">// подключить репозиторий.</span>
+          </code>
+        </pre>
+    </div>
+    <div class="terminal">
+        <pre>
+          <code>
+            <span class="command">git remote set-url origin [ssh-ключ] </span>
+            <span class="comment">// изменить ссылку на репозиторий.
+            </span>
+          </code>
+        </pre>
+    </div>
+    <div class="terminal">
+        <pre>
+          <code>
+            <span class="command">git push -u origin [название ветки]  </span>
+            <span class="comment">// отправляет/запушивает файлы в GitHub/репозиторий на сайте.</span>
+          </code>
+        </pre>
+    </div>
+    <div class="terminal">
+      <pre>
+        <code>
+          <span class="command">node название_файла.js  </span>
+          <span class="comment">// запускает код файла в терминале</span>
+        </code>
+      </pre>
+  </div>
+  <h3 class="bold">Часто задаваемые вопросы:</h3>
+  <ol>
+    <li><p class="bold">В каком случае нужно генерировать новый SSH-ключ:</p>
+      <ul>
+        <li>Когда вы впервые начинаете работу с GitHub.</li>
+        <li>При использовании нового компьютера или сервера для работы с репозиториями.</li>
+        <li>Когда старый ключ утерян или скомпрометирован</li>
+      </ul>
+      <span>1.1</span><span class="bold"> Могу ли я использовать один и тот же SSH ключ на разных устройствах:</span> 
+      <ul><li>Да, вы можете использовать один и тот же SSH ключ на разных устройствах. Это удобно при работе с несколькими устройствами.</li></ul>
+    </li>
+    <li><p class="bold">В каких случаях надо использовать git config user.name (user.email) &lt;аргументы&gt;:</p>
+      <ul>
+        <li>При первой настройке Git на новом устройстве.</li>
+        <li>При изменении вашего имени или электронной почты.</li>
+        <li>Когда вам нужно использовать разные имена или адреса электронной почты для разных проектов.</li>
+      </ul>
+    </li>
+    <li><p class="bold">В каком случае нужно создавать ветку и для чего она нужна:</p>
+      <ul>
+        <li>Новая функциональность: создайте ветку для работы над новой функцией, чтобы не затрагивать основной код.</li>
+        <li>Исправление ошибок: создайте ветку для исправления ошибок, чтобы избежать конфликтов с основной разработкой.</li>
+        <li>Разработка параллельных версий: создайте ветку для разработки и тестирования новых идей без влияния на стабильный код.</li>
+      </ul>
+    </li>
+    <li><p class="bold">Что писать в комментарии для git commit:</p>
+      <ul>
+        <li>Краткое, но информативное описание изменений, чтобы понять суть коммита.</li>
+        <li>Укажите, какие задачи решает этот коммит.</li>
+        <li>Следуйте принципу "Как" и "Почему" для более полного объяснения.</li>
+      </ul>
+    </li>
+    <li><p class="bold">Что такое Pull Request и зачем он нужен:</p>
+      <ul>
+        <li>Pull Request (или Merge Request) - это запрос на внесение изменений из вашей ветки в основную ветку проекта.</li>
+        <li>Используется для обсуждения и рецензии ваших изменений перед их объединением с основным кодом.</li>
+        <li>Позволяет совершать изменения согласованно и избегать конфликтов при слиянии кода.</li>
+      </ul>
+    </li>
+  </ol>
+    <footer>
+        <p class="data">10.02.2024</p>
+        <a class="hexly" href="https://ru.hexlet.io"><p>Хекслет</p></a>
+    </footer>
+</body>
+</html>

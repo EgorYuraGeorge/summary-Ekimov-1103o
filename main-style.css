@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto.ttf);
+}
+
+@font-face {
+    font-family: RobotoMono;
+    src: url(fonts/RobotoMono.ttf);
+}
+
+@font-face {
+    font-family: Montserreat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: SFMono;
+    src: url(fonts/SFMono-Regular.otf);
+}
+
+body {
+    margin: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+header {
+    font-family: Roboto;
+    font-size: 0.8em;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Montserreat;
+    text-align: left;
+    padding:6px 10px ;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+.wrapper {
+    height: 1180px;
+    width: 1640px;
+    column-count: 3;
+}
+
+.section {
+    height: 580px;
+    width: 530px;
+    font-family: Montserreat;
+    font-size: 1em;
+    display: inline-block;
+    border: solid #6a5fa7;
+    border-radius: 24px;
+    background: linear-gradient(45deg, #4158d0 0%, #c850c0 40%, #ffcc70 90%);
+}
+
+.newlogo {
+    height: 20%;
+}
+
+footer {
+font-size: 0.7em;
+}
+
+.data {
+ text-align: right;
+}
+
+.hexly {
+ text-align: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.section :hover {
+    color: red;
+    box-shadow: 1px 1px black;
+}
+
+.SecondBody {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.7;
+    padding-bottom: 16px;
+    padding-left: none;
+    padding-top: none;
+    padding-right: none;
+}
+
+.terminal {
+    font-weight: bold;
+}
+
+.terminal {
+    background-color: #6d757d;
+    padding: 16px;
+    margin-bottom: 16px;
+    font-family: SFMono, monospace;
+    font-size: 0.85em;
+  }
+  
+  .terminal {
+    color: #24292E;
+    position: relative;
+  }
+  
+  .terminal pre::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background-color: #009999;
+  }
+  
+  .terminal pre code {
+    color: #999988;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
